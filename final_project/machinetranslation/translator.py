@@ -1,12 +1,12 @@
 """This program translates words"""
-#import json
+import json
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-#import os
+import os
 from dotenv import load_dotenv
 load_dotenv()
-#apikey = os.environ['apikey']
-#url = os.environ['url']
+apikey = os.environ['apikey']
+url = os.environ['url']
 
 authenticator = IAMAuthenticator('Vt5Gg2hdifLyh9ABdld1C-I8XRO4A-pMn9JR4JNMg5c6')
 language_translator = LanguageTranslatorV3(
